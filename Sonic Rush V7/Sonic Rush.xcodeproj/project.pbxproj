@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C453690523B965D900780EA7 /* Coin1.png in Resources */ = {isa = PBXBuildFile; fileRef = C453690323B965D900780EA7 /* Coin1.png */; };
+		C453690623B965D900780EA7 /* Coin2.png in Resources */ = {isa = PBXBuildFile; fileRef = C453690423B965D900780EA7 /* Coin2.png */; };
+		C453690823B976E600780EA7 /* BoundaryImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C453690723B976E600780EA7 /* BoundaryImage.png */; };
+		C4558C4423B66FF200028BA5 /* Sonic.png in Resources */ = {isa = PBXBuildFile; fileRef = C4558C4323B66FF200028BA5 /* Sonic.png */; };
+		C45A04E823BA566100D9BBCE /* Coin4.png in Resources */ = {isa = PBXBuildFile; fileRef = C45A04E123BA566000D9BBCE /* Coin4.png */; };
+		C45A04E923BA566100D9BBCE /* Coin5.png in Resources */ = {isa = PBXBuildFile; fileRef = C45A04E223BA566000D9BBCE /* Coin5.png */; };
+		C45A04EA23BA566100D9BBCE /* Coin6.png in Resources */ = {isa = PBXBuildFile; fileRef = C45A04E323BA566100D9BBCE /* Coin6.png */; };
+		C45A04EB23BA566100D9BBCE /* Coin3.png in Resources */ = {isa = PBXBuildFile; fileRef = C45A04E423BA566100D9BBCE /* Coin3.png */; };
+		C45A04EC23BA566100D9BBCE /* Coin7.png in Resources */ = {isa = PBXBuildFile; fileRef = C45A04E523BA566100D9BBCE /* Coin7.png */; };
+		C45A04ED23BA566100D9BBCE /* Coin9.png in Resources */ = {isa = PBXBuildFile; fileRef = C45A04E623BA566100D9BBCE /* Coin9.png */; };
+		C45A04EE23BA566100D9BBCE /* Coin8.png in Resources */ = {isa = PBXBuildFile; fileRef = C45A04E723BA566100D9BBCE /* Coin8.png */; };
+		C4EE64ED23B642990065A6AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE64EC23B642990065A6AB /* AppDelegate.swift */; };
+		C4EE64EF23B642990065A6AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE64EE23B642990065A6AB /* SceneDelegate.swift */; };
+		C4EE64F123B642990065A6AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE64F023B642990065A6AB /* ViewController.swift */; };
+		C4EE64F423B642990065A6AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EE64F223B642990065A6AB /* Main.storyboard */; };
+		C4EE64F623B6429B0065A6AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4EE64F523B6429B0065A6AB /* Assets.xcassets */; };
+		C4EE64F923B6429B0065A6AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EE64F723B6429B0065A6AB /* LaunchScreen.storyboard */; };
+		C4EE650423B6429B0065A6AB /* Sonic_RushTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE650323B6429B0065A6AB /* Sonic_RushTests.swift */; };
+		C4EE650F23B6429B0065A6AB /* Sonic_RushUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE650E23B6429B0065A6AB /* Sonic_RushUITests.swift */; };
+		C4EE651D23B6436D0065A6AB /* DragImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE651C23B6436D0065A6AB /* DragImageView.swift */; };
+		C4EE651F23B645180065A6AB /* Aim.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EE651E23B645180065A6AB /* Aim.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4EE650023B6429B0065A6AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4EE64E123B642990065A6AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4EE64E823B642990065A6AB;
+			remoteInfo = "Sonic Rush";
+		};
+		C4EE650B23B6429B0065A6AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4EE64E123B642990065A6AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4EE64E823B642990065A6AB;
+			remoteInfo = "Sonic Rush";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C453690323B965D900780EA7 /* Coin1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Coin1.png; path = images/Coin1.png; sourceTree = SOURCE_ROOT; };
+		C453690423B965D900780EA7 /* Coin2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Coin2.png; path = images/Coin2.png; sourceTree = SOURCE_ROOT; };
+		C453690723B976E600780EA7 /* BoundaryImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BoundaryImage.png; path = images/BoundaryImage.png; sourceTree = SOURCE_ROOT; };
+		C4558C4323B66FF200028BA5 /* Sonic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sonic.png; path = images/Sonic.png; sourceTree = SOURCE_ROOT; };
+		C45A04E123BA566000D9BBCE /* Coin4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Coin4.png; path = images/Coin4.png; sourceTree = SOURCE_ROOT; };
+		C45A04E223BA566000D9BBCE /* Coin5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Coin5.png; path = images/Coin5.png; sourceTree = SOURCE_ROOT; };
+		C45A04E323BA566100D9BBCE /* Coin6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Coin6.png; path = images/Coin6.png; sourceTree = SOURCE_ROOT; };
+		C45A04E423BA566100D9BBCE /* Coin3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Coin3.png; path = images/Coin3.png; sourceTree = SOURCE_ROOT; };
+		C45A04E523BA566100D9BBCE /* Coin7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Coin7.png; path = images/Coin7.png; sourceTree = SOURCE_ROOT; };
+		C45A04E623BA566100D9BBCE /* Coin9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Coin9.png; path = images/Coin9.png; sourceTree = SOURCE_ROOT; };
+		C45A04E723BA566100D9BBCE /* Coin8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Coin8.png; path = images/Coin8.png; sourceTree = SOURCE_ROOT; };
+		C4EE64E923B642990065A6AB /* Sonic Rush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sonic Rush.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4EE64EC23B642990065A6AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4EE64EE23B642990065A6AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C4EE64F023B642990065A6AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4EE64F323B642990065A6AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4EE64F523B6429B0065A6AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4EE64F823B6429B0065A6AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4EE64FA23B6429B0065A6AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4EE64FF23B6429B0065A6AB /* Sonic RushTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sonic RushTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4EE650323B6429B0065A6AB /* Sonic_RushTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sonic_RushTests.swift; sourceTree = "<group>"; };
+		C4EE650523B6429B0065A6AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4EE650A23B6429B0065A6AB /* Sonic RushUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sonic RushUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4EE650E23B6429B0065A6AB /* Sonic_RushUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sonic_RushUITests.swift; sourceTree = "<group>"; };
+		C4EE651023B6429B0065A6AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4EE651C23B6436D0065A6AB /* DragImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragImageView.swift; sourceTree = "<group>"; };
+		C4EE651E23B645180065A6AB /* Aim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Aim.png; path = images/Aim.png; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4EE64E623B642990065A6AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EE64FC23B6429B0065A6AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EE650723B6429B0065A6AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4EE64E023B642990065A6AB = {
+			isa = PBXGroup;
+			children = (
+				C4EE64EB23B642990065A6AB /* Sonic Rush */,
+				C4EE650223B6429B0065A6AB /* Sonic RushTests */,
+				C4EE650D23B6429B0065A6AB /* Sonic RushUITests */,
+				C4EE64EA23B642990065A6AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4EE64EA23B642990065A6AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4EE64E923B642990065A6AB /* Sonic Rush.app */,
+				C4EE64FF23B6429B0065A6AB /* Sonic RushTests.xctest */,
+				C4EE650A23B6429B0065A6AB /* Sonic RushUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4EE64EB23B642990065A6AB /* Sonic Rush */ = {
+			isa = PBXGroup;
+			children = (
+				C4EE64EC23B642990065A6AB /* AppDelegate.swift */,
+				C4EE64EE23B642990065A6AB /* SceneDelegate.swift */,
+				C4EE64F023B642990065A6AB /* ViewController.swift */,
+				C45A04E423BA566100D9BBCE /* Coin3.png */,
+				C45A04E123BA566000D9BBCE /* Coin4.png */,
+				C45A04E223BA566000D9BBCE /* Coin5.png */,
+				C45A04E323BA566100D9BBCE /* Coin6.png */,
+				C45A04E523BA566100D9BBCE /* Coin7.png */,
+				C45A04E723BA566100D9BBCE /* Coin8.png */,
+				C45A04E623BA566100D9BBCE /* Coin9.png */,
+				C453690723B976E600780EA7 /* BoundaryImage.png */,
+				C4558C4323B66FF200028BA5 /* Sonic.png */,
+				C4EE64F223B642990065A6AB /* Main.storyboard */,
+				C453690323B965D900780EA7 /* Coin1.png */,
+				C453690423B965D900780EA7 /* Coin2.png */,
+				C4EE651E23B645180065A6AB /* Aim.png */,
+				C4EE651C23B6436D0065A6AB /* DragImageView.swift */,
+				C4EE64F523B6429B0065A6AB /* Assets.xcassets */,
+				C4EE64F723B6429B0065A6AB /* LaunchScreen.storyboard */,
+				C4EE64FA23B6429B0065A6AB /* Info.plist */,
+			);
+			path = "Sonic Rush";
+			sourceTree = "<group>";
+		};
+		C4EE650223B6429B0065A6AB /* Sonic RushTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4EE650323B6429B0065A6AB /* Sonic_RushTests.swift */,
+				C4EE650523B6429B0065A6AB /* Info.plist */,
+			);
+			path = "Sonic RushTests";
+			sourceTree = "<group>";
+		};
+		C4EE650D23B6429B0065A6AB /* Sonic RushUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4EE650E23B6429B0065A6AB /* Sonic_RushUITests.swift */,
+				C4EE651023B6429B0065A6AB /* Info.plist */,
+			);
+			path = "Sonic RushUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4EE64E823B642990065A6AB /* Sonic Rush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4EE651323B6429B0065A6AB /* Build configuration list for PBXNativeTarget "Sonic Rush" */;
+			buildPhases = (
+				C4EE64E523B642990065A6AB /* Sources */,
+				C4EE64E623B642990065A6AB /* Frameworks */,
+				C4EE64E723B642990065A6AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sonic Rush";
+			productName = "Sonic Rush";
+			productReference = C4EE64E923B642990065A6AB /* Sonic Rush.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4EE64FE23B6429B0065A6AB /* Sonic RushTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4EE651623B6429B0065A6AB /* Build configuration list for PBXNativeTarget "Sonic RushTests" */;
+			buildPhases = (
+				C4EE64FB23B6429B0065A6AB /* Sources */,
+				C4EE64FC23B6429B0065A6AB /* Frameworks */,
+				C4EE64FD23B6429B0065A6AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4EE650123B6429B0065A6AB /* PBXTargetDependency */,
+			);
+			name = "Sonic RushTests";
+			productName = "Sonic RushTests";
+			productReference = C4EE64FF23B6429B0065A6AB /* Sonic RushTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4EE650923B6429B0065A6AB /* Sonic RushUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4EE651923B6429B0065A6AB /* Build configuration list for PBXNativeTarget "Sonic RushUITests" */;
+			buildPhases = (
+				C4EE650623B6429B0065A6AB /* Sources */,
+				C4EE650723B6429B0065A6AB /* Frameworks */,
+				C4EE650823B6429B0065A6AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4EE650C23B6429B0065A6AB /* PBXTargetDependency */,
+			);
+			name = "Sonic RushUITests";
+			productName = "Sonic RushUITests";
+			productReference = C4EE650A23B6429B0065A6AB /* Sonic RushUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4EE64E123B642990065A6AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Lyubomir Stanoev";
+				TargetAttributes = {
+					C4EE64E823B642990065A6AB = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					C4EE64FE23B6429B0065A6AB = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = C4EE64E823B642990065A6AB;
+					};
+					C4EE650923B6429B0065A6AB = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = C4EE64E823B642990065A6AB;
+					};
+				};
+			};
+			buildConfigurationList = C4EE64E423B642990065A6AB /* Build configuration list for PBXProject "Sonic Rush" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4EE64E023B642990065A6AB;
+			productRefGroup = C4EE64EA23B642990065A6AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4EE64E823B642990065A6AB /* Sonic Rush */,
+				C4EE64FE23B6429B0065A6AB /* Sonic RushTests */,
+				C4EE650923B6429B0065A6AB /* Sonic RushUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4EE64E723B642990065A6AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4EE64F923B6429B0065A6AB /* LaunchScreen.storyboard in Resources */,
+				C4EE651F23B645180065A6AB /* Aim.png in Resources */,
+				C4EE64F623B6429B0065A6AB /* Assets.xcassets in Resources */,
+				C453690823B976E600780EA7 /* BoundaryImage.png in Resources */,
+				C45A04ED23BA566100D9BBCE /* Coin9.png in Resources */,
+				C45A04EB23BA566100D9BBCE /* Coin3.png in Resources */,
+				C4558C4423B66FF200028BA5 /* Sonic.png in Resources */,
+				C45A04EC23BA566100D9BBCE /* Coin7.png in Resources */,
+				C453690623B965D900780EA7 /* Coin2.png in Resources */,
+				C45A04EA23BA566100D9BBCE /* Coin6.png in Resources */,
+				C45A04EE23BA566100D9BBCE /* Coin8.png in Resources */,
+				C45A04E923BA566100D9BBCE /* Coin5.png in Resources */,
+				C453690523B965D900780EA7 /* Coin1.png in Resources */,
+				C45A04E823BA566100D9BBCE /* Coin4.png in Resources */,
+				C4EE64F423B642990065A6AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EE64FD23B6429B0065A6AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EE650823B6429B0065A6AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4EE64E523B642990065A6AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4EE64F123B642990065A6AB /* ViewController.swift in Sources */,
+				C4EE64ED23B642990065A6AB /* AppDelegate.swift in Sources */,
+				C4EE651D23B6436D0065A6AB /* DragImageView.swift in Sources */,
+				C4EE64EF23B642990065A6AB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EE64FB23B6429B0065A6AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4EE650423B6429B0065A6AB /* Sonic_RushTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EE650623B6429B0065A6AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4EE650F23B6429B0065A6AB /* Sonic_RushUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4EE650123B6429B0065A6AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4EE64E823B642990065A6AB /* Sonic Rush */;
+			targetProxy = C4EE650023B6429B0065A6AB /* PBXContainerItemProxy */;
+		};
+		C4EE650C23B6429B0065A6AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4EE64E823B642990065A6AB /* Sonic Rush */;
+			targetProxy = C4EE650B23B6429B0065A6AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4EE64F223B642990065A6AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4EE64F323B642990065A6AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4EE64F723B6429B0065A6AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4EE64F823B6429B0065A6AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4EE651123B6429B0065A6AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4EE651223B6429B0065A6AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4EE651423B6429B0065A6AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Sonic Rush/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "L.Sonic-Rush";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4EE651523B6429B0065A6AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Sonic Rush/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "L.Sonic-Rush";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C4EE651723B6429B0065A6AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Sonic RushTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "L.Sonic-RushTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sonic Rush.app/Sonic Rush";
+			};
+			name = Debug;
+		};
+		C4EE651823B6429B0065A6AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Sonic RushTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "L.Sonic-RushTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sonic Rush.app/Sonic Rush";
+			};
+			name = Release;
+		};
+		C4EE651A23B6429B0065A6AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Sonic RushUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "L.Sonic-RushUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sonic Rush";
+			};
+			name = Debug;
+		};
+		C4EE651B23B6429B0065A6AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Sonic RushUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "L.Sonic-RushUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sonic Rush";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4EE64E423B642990065A6AB /* Build configuration list for PBXProject "Sonic Rush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4EE651123B6429B0065A6AB /* Debug */,
+				C4EE651223B6429B0065A6AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4EE651323B6429B0065A6AB /* Build configuration list for PBXNativeTarget "Sonic Rush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4EE651423B6429B0065A6AB /* Debug */,
+				C4EE651523B6429B0065A6AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4EE651623B6429B0065A6AB /* Build configuration list for PBXNativeTarget "Sonic RushTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4EE651723B6429B0065A6AB /* Debug */,
+				C4EE651823B6429B0065A6AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4EE651923B6429B0065A6AB /* Build configuration list for PBXNativeTarget "Sonic RushUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4EE651A23B6429B0065A6AB /* Debug */,
+				C4EE651B23B6429B0065A6AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4EE64E123B642990065A6AB /* Project object */;
+}
