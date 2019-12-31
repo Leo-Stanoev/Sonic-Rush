@@ -17,6 +17,8 @@ protocol ReleaseDelegate {
 }
 
 class ViewController: UIViewController, ReleaseDelegate, UpdateAngle{
+    
+    
     let w = UIScreen.main.bounds.width
     let h = UIScreen.main.bounds.height
     var dynamicAnimator: UIDynamicAnimator!
@@ -25,7 +27,6 @@ class ViewController: UIViewController, ReleaseDelegate, UpdateAngle{
     var collisionBehavior: UICollisionBehavior!
     var sonicViewArray: [UIImageView] = []
     var coinViewArray: [UIImageView] = []
-
     var i = 0
     var initialised = 0
     var spawnX: CGFloat = 0
@@ -54,11 +55,9 @@ class ViewController: UIViewController, ReleaseDelegate, UpdateAngle{
         spawnX = xy.x
         spawnY = xy.y
     }
-    
-    
-    
+
     func CreateSonic() {
-         let sonicView = UIImageView(image: nil)
+             let sonicView = UIImageView(image: nil)
          sonicView.image = UIImage(named: "Sonic.png")
          sonicView.frame = CGRect(x:spawnX-15, y: spawnY-15, width: 55, height: 55)
          view.addSubview(sonicView)
@@ -112,14 +111,19 @@ class ViewController: UIViewController, ReleaseDelegate, UpdateAngle{
 
               }
             self.coinPos += 1
+            UIView.animate(withDuration: 1, animations: ({sonicView.transform = CGAffineTransform.init(rotationAngle: 2)}))
             }
             self.coinPos = 0
         }
+        
+        
+        
         i+=1
         //gravity
         //gravityBehavior = UIGravityBehavior(items: sonicViewArray)
         //dynamicAnimator.addBehavior(gravityBehavior)
-
+        launches += 1
+        
     }
     
     func createCoin(){
@@ -154,7 +158,6 @@ class ViewController: UIViewController, ReleaseDelegate, UpdateAngle{
         
         view.addSubview(coinView)
         coinViewArray.append(coinView)
-        launches += 1
     }
     
     //Link Aim Object to viewController
@@ -162,8 +165,6 @@ class ViewController: UIViewController, ReleaseDelegate, UpdateAngle{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //coinPosArray = [Int(h*0.03),Int(h*0.22),Int(h*0.41),Int(h*0.60),Int(h*0.79)]
         
         Time.center = CGPoint(x:w*0.1, y: 20)
         ScoreLabel.center = CGPoint(x:w*0.5, y: 20)
@@ -171,6 +172,7 @@ class ViewController: UIViewController, ReleaseDelegate, UpdateAngle{
         //start Aim object at viewDidLoad
         Aim.center = CGPoint(x:w*0.08, y:h*0.5)
                 createCoin()
+        Aim.isUserInteractionEnabled = true
         //Assign Delegate for DragImageView.swift
         AimRelease.myDelegate = self
         AimRelease.myDelegateAngle = self
@@ -179,76 +181,38 @@ class ViewController: UIViewController, ReleaseDelegate, UpdateAngle{
         
     }
     
-    func gameOver(){
-        let gameOver = UIImageView(image: nil)
-        gameOver.image = UIImage(named: "GameOver.png")
-        gameOver.frame = CGRect(x: 0, y: 0, width: w, height: h)
-        view.addSubview(gameOver)
+    func end(){
+        let endViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "endGame") as! EndViewController
+        endViewController.score = self.score
+        endViewController.launches = self.launches
+        self.present(endViewController,animated:true,completion: nil)
         
-        let finalCoins = UIImageView(image: nil)
-        finalCoins.image = UIImage(named: "Coin6.png")
-        finalCoins.frame = CGRect(x: w*0.25, y: h*0.4, width: 55, height: 55)
-        view.addSubview(finalCoins)
-        
-        let finalCoinsLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 75, height: 40))
-        finalCoinsLabel.center = CGPoint(x: w*0.37, y: h*0.47)
-        finalCoinsLabel.textAlignment = .center
-        finalCoinsLabel.font = UIFont.systemFont(ofSize: 32)
-        finalCoinsLabel.text = "x  " + String(score)
-        self.view.addSubview(finalCoinsLabel)
-        
-        let finalLaunches = UIImageView(image: nil)
-        finalLaunches.image = UIImage(named: "Sonic.png")
-        finalLaunches.frame = CGRect(x: w*0.07, y: h*0.4, width: 55, height: 55)
-        view.addSubview(finalLaunches)
-        
-        let finalLaunchesLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 75, height: 40))
-        finalLaunchesLabel.center = CGPoint(x: w*0.19, y: h*0.47)
-        finalLaunchesLabel.textAlignment = .center
-        finalLaunchesLabel.font = UIFont.systemFont(ofSize: 32)
-        finalLaunchesLabel.text = "x  " + String(score)
-        self.view.addSubview(finalLaunchesLabel)
-        
-        let replayButton = UIButton(frame: CGRect(x: w*0.04, y: h*0.75, width: 150, height: 50))
-        replayButton.setImage(UIImage(named: "Replay.png"), for: .normal)
-          replayButton.setTitle("Replay", for: .normal)
-          replayButton.addTarget(self, action: #selector(replayButtonAction), for: .touchUpInside)
-          self.view.addSubview(replayButton)
-        
-        let nextLevelButton = UIButton(frame: CGRect(x: w*0.27, y: h*0.75, width: 150, height: 50))
-        nextLevelButton.setImage(UIImage(named: "NextLevel.png"), for: .normal)
-          nextLevelButton.setTitle("Replay", for: .normal)
-          nextLevelButton.addTarget(self, action: #selector(nextLevelButtonAction), for: .touchUpInside)
-          self.view.addSubview(nextLevelButton)
+    }
+
         
 
-        }
 
-        @objc func replayButtonAction(sender: UIButton!) {
-            print("Replay")
-        }
-    
-        @objc func nextLevelButtonAction(sender: UIButton!) {
-            print("Next Level")
-        }
     
     @objc func TimeCountdown(){
         timeLimit -= 1
         Time.text = "Time Left: " + String(timeLimit)
         
-        if timeLimit % 2 == 0{
+        if timeLimit % 1 == 0{
         createCoin()
+        print("coin created")
         }
         if (timeLimit == 0){
-            gameOver()
-            Aim.isUserInteractionEnabled = false
-            Aim.removeFromSuperview()
-            ScoreLabel.removeFromSuperview()
-            Time.removeFromSuperview()
             gameTimer.invalidate()
+
+            end()
+            
+            
+            
         }
         
     }
     
+    
+    
+    
 }
-

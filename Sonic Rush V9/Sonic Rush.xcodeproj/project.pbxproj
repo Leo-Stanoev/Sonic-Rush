@@ -21,6 +21,8 @@
 		C45A04F023BAA8E300D9BBCE /* GameOver.png in Resources */ = {isa = PBXBuildFile; fileRef = C45A04EF23BAA8E300D9BBCE /* GameOver.png */; };
 		C45A04F323BAB2EE00D9BBCE /* Replay.png in Resources */ = {isa = PBXBuildFile; fileRef = C45A04F123BAB2EE00D9BBCE /* Replay.png */; };
 		C45A04F423BAB2EE00D9BBCE /* NextLevel.png in Resources */ = {isa = PBXBuildFile; fileRef = C45A04F223BAB2EE00D9BBCE /* NextLevel.png */; };
+		C45A04F623BBC9EB00D9BBCE /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45A04F523BBC9EB00D9BBCE /* EndViewController.swift */; };
+		C45A04F823BBD6EB00D9BBCE /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45A04F723BBD6EB00D9BBCE /* StartViewController.swift */; };
 		C4EE64ED23B642990065A6AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE64EC23B642990065A6AB /* AppDelegate.swift */; };
 		C4EE64EF23B642990065A6AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE64EE23B642990065A6AB /* SceneDelegate.swift */; };
 		C4EE64F123B642990065A6AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE64F023B642990065A6AB /* ViewController.swift */; };
@@ -65,6 +67,8 @@
 		C45A04EF23BAA8E300D9BBCE /* GameOver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GameOver.png; path = images/GameOver.png; sourceTree = SOURCE_ROOT; };
 		C45A04F123BAB2EE00D9BBCE /* Replay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Replay.png; path = images/Replay.png; sourceTree = SOURCE_ROOT; };
 		C45A04F223BAB2EE00D9BBCE /* NextLevel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NextLevel.png; path = images/NextLevel.png; sourceTree = SOURCE_ROOT; };
+		C45A04F523BBC9EB00D9BBCE /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		C45A04F723BBD6EB00D9BBCE /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		C4EE64E923B642990065A6AB /* Sonic Rush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sonic Rush.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EE64EC23B642990065A6AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4EE64EE23B642990065A6AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,9 +135,12 @@
 		C4EE64EB23B642990065A6AB /* Sonic Rush */ = {
 			isa = PBXGroup;
 			children = (
+				C4EE64F223B642990065A6AB /* Main.storyboard */,
 				C4EE64EC23B642990065A6AB /* AppDelegate.swift */,
 				C4EE64EE23B642990065A6AB /* SceneDelegate.swift */,
 				C4EE64F023B642990065A6AB /* ViewController.swift */,
+				C45A04F523BBC9EB00D9BBCE /* EndViewController.swift */,
+				C45A04F723BBD6EB00D9BBCE /* StartViewController.swift */,
 				C45A04F223BAB2EE00D9BBCE /* NextLevel.png */,
 				C45A04F123BAB2EE00D9BBCE /* Replay.png */,
 				C45A04E423BA566100D9BBCE /* Coin3.png */,
@@ -146,7 +153,6 @@
 				C45A04E623BA566100D9BBCE /* Coin9.png */,
 				C453690723B976E600780EA7 /* BoundaryImage.png */,
 				C4558C4323B66FF200028BA5 /* Sonic.png */,
-				C4EE64F223B642990065A6AB /* Main.storyboard */,
 				C453690323B965D900780EA7 /* Coin1.png */,
 				C453690423B965D900780EA7 /* Coin2.png */,
 				C4EE651E23B645180065A6AB /* Aim.png */,
@@ -323,9 +329,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4EE64F123B642990065A6AB /* ViewController.swift in Sources */,
+				C45A04F623BBC9EB00D9BBCE /* EndViewController.swift in Sources */,
 				C4EE64ED23B642990065A6AB /* AppDelegate.swift in Sources */,
 				C4EE651D23B6436D0065A6AB /* DragImageView.swift in Sources */,
 				C4EE64EF23B642990065A6AB /* SceneDelegate.swift in Sources */,
+				C45A04F823BBD6EB00D9BBCE /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
